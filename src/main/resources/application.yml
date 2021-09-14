@@ -1,0 +1,33 @@
+spring:
+    profiles:
+        active: prod
+    application:
+        name: nosql
+    data:
+        mongodb:
+          uri: mongodb+srv://somak:somak@cluster0.urqow.mongodb.net/products 
+          
+data:
+  name: products
+  username: somak
+  password: somak
+  
+server:
+    port: 9000
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG\
+  
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    tags:
+      application: ${spring.application.name} 
+            
