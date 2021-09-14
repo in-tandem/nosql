@@ -5,7 +5,7 @@ spring:
         name: nosql
     data:
         mongodb:
-          uri: mongodb+srv://xxx:xxx@cluster0.urqow.mongodb.net/products 
+          uri: mongodb+srv://xxx:xxx@yyyy/products 
           
 data:
   name: products
