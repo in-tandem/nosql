@@ -9,8 +9,8 @@ spring:
           
 data:
   name: products
-  username: somak
-  password: somak
+  username: XXXXX
+  password: XXXX
   
 server:
     port: 9000
